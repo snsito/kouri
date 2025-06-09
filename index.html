@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kouri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Archivo Black', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://i.imgur.com/bZ4Xmi7.jpeg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 4rem;
+      color: #ff2fd0;
+      z-index: 2;
+    }
+
+    nav {
+      background-color: #0a0a0a;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #ff2fd0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .redes a, .contacto a {
+      color: #ff2fd0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .redes a:hover, .contacto a:hover {
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    input, textarea {
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    button {
+      background-color: #ff2fd0;
+      color: #0a0a0a;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e026b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KOURI</h1>
+  </header>
+
+  <nav>
+    <a href="#bio">Sobre mí</a>
+    <a href="#lanzamiento">Último Lanzamiento</a>
+    <a href="#musica">Música</a>
+    <a href="#redes">Redes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+<section id="bio">
+  <h2>Sobre mí</h2>
+  <p><strong>Kouri</strong> es un artista urbano que destaca por su fusión innovadora de reggaetón, trap, afrobeat y sonidos Detroit. Su propuesta musical se caracteriza por la autenticidad y la versatilidad, explorando tanto temáticas sentimentales como ritmos más enérgicos.</p>
+  <p>Anteriormente conocido como <strong>Hellyvgen</strong>, bajo ese nombre desarrolló una trayectoria sólida, explorando diversas sonoridades y mostrando una profundidad lírica notable. Entre sus proyectos destacados se encuentran el álbum <em>Marchito</em>, un trabajo íntimo y emotivo dedicado a experiencias personales, y el doble single <em>Tréboles</em>, que marca un punto de inflexión en su evolución artística.</p>
+  <p>La transición de Hellyvgen a Kouri refleja un crecimiento constante y una búsqueda por innovar en la escena urbana, consolidándose como una voz fresca y relevante dentro del género.</p>
+</section>
+
+<section id="lanzamiento">
+  <h2>Último Lanzamiento</h2>
+  <div class="iframe-container">
+    <iframe src="https://sndo.ffm.to/bvdkx0g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</section>
+
+<style>
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 47, 208, 0.3);
+    border: 2px solid #ff2fd0;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  #lanzamiento h2 {
+    text-align: center;
+    color: #ff2fd0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+</style>
+
+  <section id="musica">
+    <h2>Música</h2>
+    <ul>
+      <li><a href="https://music.apple.com/mx/artist/kouri/1814648574" target="_blank">Apple Music</a></li>
+      <li><a href="https://open.spotify.com/intl-es/artist/1wAUBEm5XyjgIyftYxdTB2?si=23XxrjW3QbWgX2jhSoLVwQ" target="_blank">Spotify</a></li>
+    </ul>
+  </section>
+
+<section id="redes">
+  <h2>Redes Sociales</h2>
+  <div class="redes">
+    <a href="https://www.instagram.com/kouri.wav/" target="_blank">Instagram</a> | 
+    <a href="https://www.tiktok.com/@kouri.wav?lang=es" target="_blank">TikTok</a>
+  </div>
+</section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres colaborar o hacer una propuesta profesional? Escríbeme:</p>
+    <p class="contacto">Correo: <a href="mailto:kouri.artist@gmail.com">kouri.artist@gmail.com</a></p>
+
+
+    </form>
+  </section>
+</body>
+</html>
